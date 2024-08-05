@@ -1,24 +1,32 @@
-//
-//  ContentView.swift
-//  RecipeBrowser
-//
-//  Created by Smit Kanojiya on 02/08/24.
-//
 
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var viewModel = MealListViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            List(viewModel.meals) { meal in
+                NavigationLink(destination: MealDetailView(mealId: meal.idMeal)) {
+                    HStack {
+                        if let imageUrl = meal.strMealThumb, let url = URL(string: imageUrl) {
+                            AsyncImage(url: url) { image in
+                                image.resizable()
+                            } placeholder: {
+                                ProgressView()
+                            }
+                            .frame(width: 50, height: 50)
+                            .clipShape(Circle())
+                        }
+                        Text(meal.strMeal)
+                    }
+                }
+            }
+            .navigationTitle("Desserts")
+            .navigationBarTitleDisplayMode(.inline)
+            .task {
+                await viewModel.fetchMeals()
+            }
         }
-        .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }

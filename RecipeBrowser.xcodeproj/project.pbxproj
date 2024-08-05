@@ -11,6 +11,11 @@
 		C1D335842C5CE5AB00270E86 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D335832C5CE5AB00270E86 /* ContentView.swift */; };
 		C1D335862C5CE5AD00270E86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1D335852C5CE5AD00270E86 /* Assets.xcassets */; };
 		C1D335892C5CE5AD00270E86 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1D335882C5CE5AD00270E86 /* Preview Assets.xcassets */; };
+		C1D335902C5CE5D300270E86 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D3358F2C5CE5D300270E86 /* Meal.swift */; };
+		C1D335922C5CE60200270E86 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D335912C5CE60200270E86 /* NetworkManager.swift */; };
+		C1D335942C5CE62A00270E86 /* MealDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D335932C5CE62A00270E86 /* MealDetailView.swift */; };
+		C1D335962C5CE64100270E86 /* MealListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D335952C5CE64100270E86 /* MealListViewModel.swift */; };
+		C1D335982C5CE66C00270E86 /* MealDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D335972C5CE66C00270E86 /* MealDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		C1D335832C5CE5AB00270E86 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C1D335852C5CE5AD00270E86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1D335882C5CE5AD00270E86 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C1D3358F2C5CE5D300270E86 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		C1D335912C5CE60200270E86 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C1D335932C5CE62A00270E86 /* MealDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailView.swift; sourceTree = "<group>"; };
+		C1D335952C5CE64100270E86 /* MealListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListViewModel.swift; sourceTree = "<group>"; };
+		C1D335972C5CE66C00270E86 /* MealDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +65,11 @@
 				C1D335832C5CE5AB00270E86 /* ContentView.swift */,
 				C1D335852C5CE5AD00270E86 /* Assets.xcassets */,
 				C1D335872C5CE5AD00270E86 /* Preview Content */,
+				C1D3358F2C5CE5D300270E86 /* Meal.swift */,
+				C1D335912C5CE60200270E86 /* NetworkManager.swift */,
+				C1D335932C5CE62A00270E86 /* MealDetailView.swift */,
+				C1D335952C5CE64100270E86 /* MealListViewModel.swift */,
+				C1D335972C5CE66C00270E86 /* MealDetailViewModel.swift */,
 			);
 			path = RecipeBrowser;
 			sourceTree = "<group>";
@@ -137,8 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1D335922C5CE60200270E86 /* NetworkManager.swift in Sources */,
 				C1D335842C5CE5AB00270E86 /* ContentView.swift in Sources */,
+				C1D335902C5CE5D300270E86 /* Meal.swift in Sources */,
+				C1D335942C5CE62A00270E86 /* MealDetailView.swift in Sources */,
 				C1D335822C5CE5AB00270E86 /* RecipeBrowserApp.swift in Sources */,
+				C1D335982C5CE66C00270E86 /* MealDetailViewModel.swift in Sources */,
+				C1D335962C5CE64100270E86 /* MealListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
